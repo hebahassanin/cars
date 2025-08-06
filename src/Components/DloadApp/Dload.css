@@ -1,0 +1,18 @@
+.dload-info{
+    padding: 2rem 6rem;
+    background-image: url("../../assets/images/landing-page/sec-5/Vector.png");
+    background-size: cover;
+}
+
+form .dload-input{
+    background-color: #d9e5f2;
+    width: 20rem;
+    padding: .5rem 1.5rem;
+}
+form .dload-input:focus{
+    background-color: #d9e5f2;
+}
+form .dload-btn{
+    padding: 0 6rem;
+}
+

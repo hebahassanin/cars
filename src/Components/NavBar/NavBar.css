@@ -1,0 +1,11 @@
+.logo{
+    width: 115%;
+}
+.nav-item .nav-link{
+    font-size: 19px;
+    margin-right: 12px;
+}
+nav .login .btn-login{
+    background-color: transparent;
+    border: 0;
+}

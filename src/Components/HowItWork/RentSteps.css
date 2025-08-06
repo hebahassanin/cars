@@ -1,0 +1,23 @@
+.rent-info-title{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 2rem 0 0.5rem;
+}
+.rent-info-desc{
+    font-weight: 600;
+}
+.car-brands .car-brands-logo{
+    white-space: nowrap;
+    animation: scrollLeft 15s infinite;
+}
+.car-brands-logo span{
+    margin:0 5rem;
+}
+@keyframes scrollLeft{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
