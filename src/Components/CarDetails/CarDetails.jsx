@@ -7,6 +7,7 @@ import airCondition from '../../assets/images/card/conditionar.png';
 import frame from '../../assets/images/card/Frame.png';
 import doors from '../../assets/images/card/doors.png';
 import SectionHeading from '../SeactionHeading/SectionHeading';
+import { Link } from 'react-router-dom';
 
 function CarDetails() {
   const { id } = useParams(); 
@@ -20,6 +21,13 @@ function CarDetails() {
 
   return (
     <div className="container mt-5">
+
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><Link to="/">Home</Link></li>
+            <li class="breadcrumb-item active" aria-current="page">Cars Details</li>
+          </ol>
+        </nav>
         <div className='row'>
       {car ? (
         // <div className="card p-4">
@@ -34,28 +42,33 @@ function CarDetails() {
         </div>
         
         <div className='col-md-6'>
-                <SectionHeading subtitle="why choose us" title="We offer the best experience with our rental deals"/>
+          <SectionHeading subtitle="why choose us" title="We offer the best experience with our rental deals"/>
+          <div className='py-2'>
+            <span className="fs-3">{car.car} / </span>
+            <span className='fs-3'>{car.car_model}</span>
+          </div>
+          
                 
-                <div>
-                    <img src={airCondition} alt=""/>
-                    <small className='text-muted ms-4 fs-5'>Air conditioning</small>
-                </div>
-                <div>
-                    <img src={user} alt=""/>
-                    <small className='text-muted ms-4 fs-5'>2 Passanger</small>
-                </div>
+          <div>
+              <img src={airCondition} alt=""/>
+              <small className='text-muted ms-4 fs-5'>Air conditioning</small>
+          </div>
+          <div>
+              <img src={user} alt=""/>
+              <small className='text-muted ms-4 fs-5'>2 Passanger</small>
+          </div>
 
-                <div>
-                    <img src={frame} alt=""/>
-                    <small className='text-muted ms-4 fs-5'>auto</small>
-                </div>
+          <div>
+              <img src={frame} alt=""/>
+              <small className='text-muted ms-4 fs-5'>auto</small>
+          </div>
 
-                <div>
-                    <img src={doors} alt=""/>
-                    <small className='text-muted ms-4 fs-5'>4 doors</small>
-                  </div>
-
+          <div>
+              <img src={doors} alt=""/>
+              <small className='text-muted ms-4 fs-5'>4 doors</small>
             </div>
+
+        </div>
 
         </>
         

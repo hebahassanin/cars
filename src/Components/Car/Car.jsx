@@ -18,18 +18,19 @@ export default function Car({car,index}) {
   return (
 
       
-      <div className='col-md-3'>
+      <div className='col-md-3 col-sm-6'>
 
-          <div className="card p-2">
+          <div className="card  p-2">
             <img src={carImages[index % carImages.length]} className="card-img-top w-75" alt="..."/>
             <div className="card-body mt-2">
-              <h5 className="card-title">{car.car_model}</h5>
+              <h5 className="card-title">{car.car} ({car.car_model_year})</h5>
+              <h6 className='card-text'>{car.car_model}</h6>
               <div className="card-text">
                 <img src={star} alt='star'/>
                 <small className='text-muted'>(1345 reviews)</small>
               </div>
 
-              <div className='card-text d-flex m-2 gap-3'>
+              <div className='card-text d-flex m-2 gap-3 '>
                   <div>
                     <img src={user} alt=""/>
                     <small className='text-muted'>2 Passanger</small>

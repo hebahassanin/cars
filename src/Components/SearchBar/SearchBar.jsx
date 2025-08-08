@@ -18,7 +18,10 @@ export default function SearchBar() {
     try {
 
       let response = await axios.get("https://myfakeapi.com/api/cars/");
-      setCars(response?.data?.cars);
+      // setCars(response?.data?.cars);
+
+      setCars(response?.data?.cars.slice(0,4));
+      
       
       
     } catch (error) {
@@ -31,13 +34,18 @@ export default function SearchBar() {
 useEffect(()=>{
   getCars();
 },[])
-console.log(cars);
+// console.log(cars);
 const filteredCars = cars.filter((car)=>
-car.car.toLowerCase().includes(searchTerm.toLowerCase())
+car.car.toLowerCase().includes(searchTerm.toLowerCase())||
+car.car_model.toLowerCase().includes(searchTerm.toLowerCase())
 );
 
-console.log(filteredCars);
-let firstFour= searchTerm?filteredCars:cars.slice(0,4);
+// console.log(filteredCars);
+// let firstFour= searchTerm !==""?filteredCars:cars.slice(0,4);
+
+
+// let firstFour= cars.slice(0,4);
+// console.log(firstFour);
 
   return (
     <>
@@ -46,8 +54,8 @@ let firstFour= searchTerm?filteredCars:cars.slice(0,4);
             <span className="input-group-text" id="addon-wrapping">
                 <FaLocationDot />
             </span>
-            <input type="text" class="form-control" placeholder="Search by Name" aria-describedby="addon-wrapping"
-            value={searchTerm} onChange={(e)=> setSearchTerm(e.target.value)}/>
+            <input type="text" className="form-control" placeholder="Search by Name" aria-describedby="addon-wrapping"
+            onChange={(e)=> setSearchTerm(e.target.value)}/>
             <button type='button' className='btn btn-primary'>Search</button>
         </div>
 
@@ -56,11 +64,14 @@ let firstFour= searchTerm?filteredCars:cars.slice(0,4);
 
         <div className='row'>
 
-          { firstFour.map((car,index)=>(
+          {filteredCars.map((car,index)=>(
+
+          // {searchTerm==""? firstFour.map((car,index)=>(
    
           <Car key={car.id} car={car} index={index}/>
 
           ))}
+
           
         </div>
 
@@ -69,7 +80,6 @@ let firstFour= searchTerm?filteredCars:cars.slice(0,4);
           <img src={arrowRight} className='ms-2' alt=''/>
       </Link>
      </div>
-
         
     </div>
       

@@ -19,20 +19,20 @@ export default function Home() {
     <div className='container-fluid home'>
         <div className='header-wrapper'>
         <NavBar/>
-        <div className='row'>
-            <div className='col home-info px-5'>
-                <h2 className='home-info-title fw-bold mb-2'>Find, book and <br/> rent a car 
+        <div className='row' style={{height: '500px'}}>
+            <div className='col-md-6 home-info px-5 text-sm-center text-md-start'>
+                <h2 className='home-info-title fw-bold mb-2 ps-5'>Find, book and <br/> rent a car 
                     <span className='text-primary text-capitalize'> easily</span>
                 </h2>
-                <p className='text-muted  lh-lg'>Get a car wherever and whenever <br/> 
+                <p className='text-muted  lh-lg ps-5'>Get a car wherever and whenever <br/> 
                  you need it with your IOS and <br/> Android device.
                 </p>
-                <div className='my-4'>
+                <div className='my-4 ps-5'>
                     <img src={downloadApp}  className="me-3" alt='dload-Android'/>
                     <img src={downloadApp1} alt='dload-ios'/>
                 </div>
             </div>
-            <div className='col py-5 home-image'>
+            <div className='col-md-6 py-5 home-image'>
                 <img src={CarAnimate} className='car' alt="carImg"/>
 
             </div>

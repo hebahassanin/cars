@@ -45,7 +45,7 @@ export default function Testimonials() {
 <div className='col-md-6'>
         <div className="card mb-3 animated-card mx-3">
             <div className="row g-0">
-                <div className="col-md-4 cardImg">
+                <div className="col-md-4  cardImg">
                     <img src={cardImage2} className="img-fluid rounded-start w-100" alt="testimonials"/>
                 </div>
                 <div className="col-md-8">

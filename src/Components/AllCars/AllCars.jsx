@@ -12,7 +12,7 @@ import doors from '../../assets/images/card/doors.png';
 import img1 from '../../assets/images/card/car1.png';
 import img2 from '../../assets/images/card/car2.png';
 import img3 from '../../assets/images/card/car3.png';
-
+import Car from '../Car/Car';
 
 function AllCars() {
 
@@ -35,24 +35,29 @@ const totalPages =Math.ceil(cars.length/carsPerPage);
       .catch(err => console.log(err));
   }, []);
 
-  // const carImages =[img1, img2,img3];
-  // const imageIndex=(indexOfFirstCar +idx) % carImages.length;
-  // const image=carImages[imageIndex];
+  const carImages =[img1, img2,img3];
 
   return (
     <div className="container mt-5">
-      <h2 className="mb-4">All Cars</h2>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><Link to="/">Home</Link></li>
+          <li class="breadcrumb-item active" aria-current="page">All Cars</li>
+        </ol>
+      </nav>
       <div className="row">
         {/* {cars.map(car => ( */}
 
-        {currentCars.map((car) => (
+      {currentCars.map((car, index) => (
 
-    <div key={car.id} className='col-md-3 my-3'>
+    <div key={car.id} className='col-md-3 col-sm-6 my-3'>
 
     <div className="card p-2">
-      <img src={imgCard} className="card-img-top w-75" alt="..."/>
+      <img src={carImages[index % carImages.length]} className="card-img-top w-75" alt="..."/>
       <div className="card-body mt-2">
-        <h5 className="card-title">{car.car_model}</h5>
+        {/* <h5 className="card-title">{car.car_model}</h5> */}
+        <h5 className="card-title">{car.car} ({car.car_model_year})</h5>
+        <h6 className='card-text'>{car.car_model}</h6>
         <div className="card-text">
           <img src={star} alt='star'/>
           <small className='text-muted'>(1345 reviews)</small>
@@ -97,8 +102,6 @@ const totalPages =Math.ceil(cars.length/carsPerPage);
 
 
     </div>
-
-    //pagination 
    
 
         ))}
