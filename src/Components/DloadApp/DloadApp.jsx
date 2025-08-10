@@ -1,7 +1,7 @@
 import React from 'react';
 import downloadApp from '../../assets/images/landing-page/andriod.png';
 import downloadApp1 from '../../assets/images/landing-page/ios.png';
-import dload from '../../assets/images/landing-page/sec-7/iphone-14.png';
+import iphone from '../../assets/images/landing-page/sec-7/iPhone.png';
 import './Dload.css';
 
 export default function DloadApp() {
@@ -38,7 +38,7 @@ export default function DloadApp() {
 
             </div>
             <div className='col-md-6 d-flex align-items-end'>
-                <img src={dload} alt='dloadPhoto' className='w-50'/>
+                <img src={iphone} alt='dloadPhoto' className='w-50'/>
 
             </div>
         </div>
