@@ -19,9 +19,9 @@ export default function ChooseUs() {
                 <SectionHeading subtitle="why choose us" title="We offer the best experience with our rental deals"/>
                 <div className='row'>
                     <div className='col-md-2 my-2'>
-                        <img src={logo1} className='w-md-75 w-sm-50 d-sm-block mx-sm-auto' alt='logo1'/>
+                        <img src={logo1} className='w-md-75 w-sm-50 d-block mx-auto' alt='logo1'/>
                     </div>
-                    <div className='col-md-10 chooseUs-info text-sm-center mb-sm-3 text-md-start'>
+                    <div className='col-md-10 chooseUs-info text-center mb-sm-3 text-md-start'>
                         <h3 className='chooseUs-info-title'>Best price guaranteed</h3>
                         <p className='chooseUs-info-desc'>Find a lower price? We will refund you 100% of the difference.</p>
                     </div>
@@ -29,9 +29,9 @@ export default function ChooseUs() {
 
                 <div className='row'>
                     <div className='col-md-2 my-2'>
-                        <img src={logo1} className='w-md-75 w-sm-50 d-sm-block mx-sm-auto' alt='logo1'/>
+                        <img src={logo1} className='w-md-75 w-sm-50 d-block mx-auto' alt='logo1'/>
                     </div>
-                    <div className='col-md-10 text-sm-center text-md-start mb-sm-3'>
+                    <div className='col-md-10 text-center text-md-start mb-sm-3'>
                         <h3 className='chooseUs-info-title'>Experience Driver</h3>
                         <p className='chooseUs-info-desc'>Don't have driver?Don't worry,we have many experienced driver for you.</p>
                     </div>
@@ -39,9 +39,9 @@ export default function ChooseUs() {
 
                 <div className='row'>
                     <div className='col-md-2 my-2'>
-                        <img src={logo2} className='w-md-75 w-sm-50 d-sm-block mx-sm-auto' alt='logo2'/>
+                        <img src={logo2} className='w-md-75 w-sm-50  d-block mx-auto' alt='logo2'/>
                     </div>
-                    <div className='col-md-10 text-sm-center text-md-start mb-sm-3'>
+                    <div className='col-md-10 text-center text-md-start mb-sm-3'>
                         <h3 className='chooseUs-info-title'>24 hour car delivery</h3>
                         <p className='chooseUs-info-desc'>Book your car anytime and we will deliver it directly to you.</p>
                     </div>
@@ -49,17 +49,13 @@ export default function ChooseUs() {
 
                 <div className='row'>
                     <div className='col-md-2 my-2'>
-                        <img src={logo3} className='w-md-75 w-sm-50 d-sm-block mx-sm-auto' alt='logo3'/>
+                        <img src={logo3} className='w-md-75 w-sm-50 d-block mx-auto' alt='logo3'/>
                     </div>
-                    <div className='col-md-10 text-sm-center text-md-start mb-sm-3'>
+                    <div className='col-md-10 text-center text-md-start mb-sm-3'>
                         <h3 className='chooseUs-info-title'>24/7 technical support</h3>
                         <p className='chooseUs-info-desc'>Have a question? Contact Rentcars support any time when you have problem.</p>
                     </div>
                 </div>
-
-
-
-
 
             </div>
         </div>

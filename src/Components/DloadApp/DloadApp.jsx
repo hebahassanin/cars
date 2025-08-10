@@ -31,7 +31,7 @@ export default function DloadApp() {
                         <input type='text' placeholder='Email' className="form-control dload-input rounded-pill"/>
                     </div>
                     <div className='dload-btn'>
-                        <button class="btn btn-primary" type="submit">Submit</button>
+                        <button className="btn btn-primary" type="submit">Submit</button>
                     </div>
                     
                 </form>

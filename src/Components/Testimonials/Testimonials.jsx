@@ -11,16 +11,16 @@ export default function Testimonials() {
     <div className='container-fluid py-3 testimonials-sec'>
         <div className='row'>
             <div className='col-md-12'>
-        <SectionHeading subtitle="testimonials" title="what pepole say about us?"/>
-        </div>
+                <SectionHeading subtitle="testimonials" title="what pepole say about us?"/>
+            </div>
         </div>
 
       <div className='row justify-content-center cards-container'>
-        <div className='col-md-6'>
+        <div className='col-6 col-md-6'>
         <div className="card mb-3 animated-card mx-3">
             <div className="row g-0">
                 <div className="col-md-4 cardImg">
-                    <img src={cardImage1} className="img-fluid rounded-start w-100" alt="testimonials"/>
+                    <img src={cardImage1} className="img-fluid rounded-start "  alt="testimonials"/>
                 </div>
                 <div className="col-md-8">
                 <div className="card-body">
@@ -32,7 +32,7 @@ export default function Testimonials() {
                         <img src={star} alt='star'/>
                         <img src={star} alt='star'/>
                     </div>
-                    <p className="card-text fs-5 my-1">"I feel very secure when using caretall's services.
+                    <p className="card-text fs-md-5 my-1">"I feel very secure when using caretall's services.
                      Your customer care team is very enthusiastic and the driver is always on time."</p>
                      <p className='card-text text-capitalize'> charlie johnson</p>
                     <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
@@ -42,11 +42,11 @@ export default function Testimonials() {
         </div>
         </div>
 
-<div className='col-md-6'>
+<div className='col-6 col-md-6'>
         <div className="card mb-3 animated-card mx-3">
             <div className="row g-0">
-                <div className="col-md-4  cardImg">
-                    <img src={cardImage2} className="img-fluid rounded-start w-100" alt="testimonials"/>
+                <div className="col-md-4 cardImg">
+                    <img src={cardImage2} className="img-fluid rounded-start"  alt="testimonials"/>
                 </div>
                 <div className="col-md-8">
                 <div className="card-body">
@@ -58,7 +58,7 @@ export default function Testimonials() {
                         <img src={star} alt='star'/>
                         <img src={star} alt='star'/>
                     </div>
-                    <p className="card-text fs-5 my-1">"I feel very secure when using caretall's services.
+                    <p className="card-text fs-md-5 my-1">"I feel very secure when using caretall's services.
                      Your customer care team is very enthusiastic and the driver is always on time."</p>
                      <p className='card-text text-capitalize'> charlie johnson</p>
                     <p className="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>

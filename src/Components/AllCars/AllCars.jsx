@@ -65,24 +65,24 @@ const totalPages =Math.ceil(cars.length/carsPerPage);
 
         <div className='card-text d-flex m-2 gap-3'>
             <div>
-              <img src={user} alt=""/>
+              <img src={user} alt="user"/>
               <small className='text-muted'>2 Passanger</small>
             </div>
 
             <div>
-              <img src={frame} alt=""/>
+              <img src={frame} alt="frame"/>
               <small className='text-muted'>auto</small>
             </div>
         </div>
 
         <div className='card-text d-flex mb-3 gap-2'>
             <div>
-              <img src={airCondition} alt=""/>
+              <img src={airCondition} alt="airCondition"/>
               <small className='text-muted'>Air conditioning</small>
             </div>
 
             <div>
-              <img src={doors} alt=""/>
+              <img src={doors} alt="doors"/>
               <small className='text-muted'>4 doors</small>
             </div>
         </div>

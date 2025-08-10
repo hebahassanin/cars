@@ -6,17 +6,18 @@ import contactImg3 from '../../assets/images/footer/sms.png';
 import facebook from '../../assets/images/footer/facebook.png';
 import insta from '../../assets/images/footer/instagram.png';
 import youtube from '../../assets/images/footer/youtube.png';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 export default function Footer() {
   return (
     <>
-    <div className='container-fluid py-5 Footer-sec'>
+    <footer className=' container-fluid  gx-0 py-5 Footer-sec '>
         <div className='row'>
-            <div className=' col-sm-6 col-lg-4'>
-                <a href='#'>
+            <div className='col-sm-6 col-lg-4 text-sm-start'>
+                <Link to='#'>
                     <img src={LogoFooter} className='footer-logo' alt='logo'/>
-                </a>
+                </Link>
 
                 <div className='d-flex contact'>
                     <div>
@@ -47,37 +48,37 @@ export default function Footer() {
 
             </div>
 
-            <div className='col-sm-3 col-lg-2 footer-links'>
+            <div className='col-sm-6 col-lg-2 footer-links text-sm-center'>
                 <h3 className='h5 text-capitalize'>our products</h3>
                 <ul className='nav flex-column'>
-                    <li className='nav-item'><a className='nav-link text-white' href='#'>Career</a></li>
-                    <li className='nav-item'><a className='nav-link text-white' href='#'>cars</a></li>
-                    <li className='nav-item'><a className='nav-link text-white ' href='#'>Packages</a></li>
-                    <li className='nav-item'><a className='nav-link text-white' href='#'>Features</a></li>
-                    <li className='nav-item'><a className='nav-link text-white' href='#'>Features</a></li>
+                    <li className='nav-item'><Link className='nav-link text-white' to='#'>Career</Link></li>
+                    <li className='nav-item'><Link className='nav-link text-white' to='#'>cars</Link></li>
+                    <li className='nav-item'><Link className='nav-link text-white ' to='#'>Packages</Link></li>
+                    <li className='nav-item'><Link className='nav-link text-white' to='#'>Features</Link></li>
+                    <li className='nav-item'><Link className='nav-link text-white' to='#'>Features</Link></li>
                 </ul>
             </div>
 
-            <div className='col-sm-3 col-lg-2 footer-links'>
+            <div className='col-sm-6 col-lg-2 footer-links py-sm-5 py-lg-0'>
                 <h3 className='h5 text-capitalize'>about rent cars</h3>
                 <ul className='nav flex-column'>
-                    <li className='nav-item'><a className='nav-link text-white' href='#'>why choose us</a></li>
-                    <li className='nav-item'><a className='nav-link text-white' href='#'>our story</a></li>
-                    <li className='nav-item'><a className='nav-link text-white' href='#'>investor relations</a></li>
-                    <li className='nav-item'><a className='nav-link text-white' href='#'>press center</a></li>
-                    <li className='nav-item'><a className='nav-link text-white' href='#'>advertise</a></li>
+                    <li className='nav-item'><Link className='nav-link text-white' to='#'>why choose us</Link></li>
+                    <li className='nav-item'><Link className='nav-link text-white' to='#'>our story</Link></li>
+                    <li className='nav-item'><Link className='nav-link text-white' to='#'>investor relations</Link></li>
+                    <li className='nav-item'><Link className='nav-link text-white' to='#'>press center</Link></li>
+                    <li className='nav-item'><Link className='nav-link text-white' to='#'>advertise</Link></li>
                 </ul>
             </div>
 
-            <div className='col-sm-6 col-lg-2 footer-links'>
+            <div className='col-sm-6 col-lg-2 footer-links py-sm-5 py-lg-0'>
                 <h3 className='h5 text-capitalize'>resources</h3>
                 <ul className='nav flex-column'>
-                    <li className='nav-item'><a className='nav-link text-white' href='#'>download</a></li>
-                    <li className='nav-item'><a className='nav-link text-white' href='#'>help center</a></li>
-                    <li className='nav-item'><a className='nav-link text-white' href='#'>guides</a></li>
-                    <li className='nav-item'><a className='nav-link text-white' href='#'>partner network</a></li>
-                    <li className='nav-item'><a className='nav-link text-white' href='#'>cruises</a></li>
-                    <li className='nav-item'><a className='nav-link text-white' href='#'>developer</a></li>
+                    <li className='nav-item'><Link className='nav-link text-white' to='#'>download</Link></li>
+                    <li className='nav-item'><Link className='nav-link text-white' to='#'>help center</Link></li>
+                    <li className='nav-item'><Link className='nav-link text-white' to='#'>guides</Link></li>
+                    <li className='nav-item'><Link className='nav-link text-white' to='#'>partner network</Link></li>
+                    <li className='nav-item'><Link className='nav-link text-white' to='#'>cruises</Link></li>
+                    <li className='nav-item'><Link className='nav-link text-white' to='#'>developer</Link></li>
                 </ul>
             </div>
 
@@ -85,19 +86,19 @@ export default function Footer() {
             <h3 className='h5'>follow us</h3>
             <ul className='list-unstyled'>
                     <li>
-                        <a href='#'>
+                        <Link to='#'>
                            <img src={facebook} className='fs-5' alt='facebookLogo'/>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href='#'>
-                        <img src={insta} className='fs-5' alt='instagramLogo'/>
-                        </a>
+                        <Link to='#'>
+                            <img src={insta} className='fs-5' alt='instagramLogo'/>
+                        </Link>
                     </li>
                     <li>
-                        <a href='#'>
-                        <img src={youtube} className='fs-5' alt='youtubeLogo'/>
-                        </a>
+                        <Link to='#'>
+                            <img src={youtube} className='fs-5' alt='youtubeLogo'/>
+                        </Link>
                     </li>
                 </ul>
 
@@ -108,7 +109,7 @@ export default function Footer() {
 
         <hr/>
         <p className='pt-3 fs-5 text-capitalize'> Copyright 2023 ・ Rent cars, All Rights Reserved</p>
-    </div>
+    </footer>
       
     </>
   )

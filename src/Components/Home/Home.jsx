@@ -19,8 +19,9 @@ export default function Home() {
     <div className='container-fluid home'>
         <div className='header-wrapper'>
         <NavBar/>
+       
         <div className='row' style={{height: '500px'}}>
-            <div className='col-md-6 home-info px-5 text-sm-center text-md-start'>
+            <div className='col-md-6  ps-5 home-info text-sm-center text-md-start'>
                 <h2 className='home-info-title fw-bold mb-2 ps-5'>Find, book and <br/> rent a car 
                     <span className='text-primary text-capitalize'> easily</span>
                 </h2>
@@ -37,6 +38,7 @@ export default function Home() {
 
             </div>
         </div>
+
         </div>
 
       <SearchBar/>
@@ -44,8 +46,9 @@ export default function Home() {
       <ChooseUs/>
       <Testimonials/>
       <DloadApp/>
-      <Footer/>
     </div>
+    <Footer/>
+    
       
     </>
   )

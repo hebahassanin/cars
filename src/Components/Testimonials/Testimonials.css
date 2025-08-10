@@ -6,7 +6,7 @@
     background-origin: border-box;
 }
 .cardImg img{
-    height: 100%;
+    height:300px;
     object-fit: cover;
 }
 
@@ -26,6 +26,35 @@
       /* opacity: 1; */
     }
   }
+
+  @media(max-width:576px){
+    .animated-card{
+      transform: scale(0.9);
+    }
+    .animated-card .card-body{
+      padding: 0.75rem;
+    }
+    .animated-card h2{
+      font-size: 1rem;
+    }
+    .animated-card p{
+      font-size: .9rem;
+    }
+    .cardImg img{
+      height:200px;
+      width: 200px;
+      object-fit: cover;
+    }
+  }
+  @media(max-width:768px){
+    .cardImg img{
+      height:200px;
+      width: 300px;
+      object-fit: cover;
+    }
+
+  }
+  
   
   
 

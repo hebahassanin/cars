@@ -18,12 +18,12 @@ export default function Car({car,index}) {
   return (
 
       
-      <div className='col-md-3 col-sm-6'>
+      <div className='col-md-3 col-sm-6 my-3'>
 
-          <div className="card  p-2">
+          <div className="card p-2">
             <img src={carImages[index % carImages.length]} className="card-img-top w-75" alt="..."/>
             <div className="card-body mt-2">
-              <h5 className="card-title">{car.car} ({car.car_model_year})</h5>
+              <h5 className="card-title">{car.car}({car.car_model_year})</h5>
               <h6 className='card-text'>{car.car_model}</h6>
               <div className="card-text">
                 <img src={star} alt='star'/>
@@ -32,24 +32,24 @@ export default function Car({car,index}) {
 
               <div className='card-text d-flex m-2 gap-3 '>
                   <div>
-                    <img src={user} alt=""/>
+                    <img src={user} alt="user"/>
                     <small className='text-muted'>2 Passanger</small>
                   </div>
 
                   <div>
-                    <img src={frame} alt=""/>
+                    <img src={frame} alt="frame"/>
                     <small className='text-muted'>auto</small>
                   </div>
               </div>
 
               <div className='card-text d-flex mb-3 gap-2'>
                   <div>
-                    <img src={airCondition} alt=""/>
+                    <img src={airCondition} alt="airCondition"/>
                     <small className='text-muted'>Air conditioning</small>
                   </div>
 
                   <div>
-                    <img src={doors} alt=""/>
+                    <img src={doors} alt="doors"/>
                     <small className='text-muted'>4 doors</small>
                   </div>
               </div>

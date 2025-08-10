@@ -23,9 +23,9 @@ function CarDetails() {
     <div className="container mt-5">
 
         <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><Link to="/">Home</Link></li>
-            <li class="breadcrumb-item active" aria-current="page">Cars Details</li>
+          <ol className="breadcrumb">
+            <li className="breadcrumb-item"><Link to="/">Home</Link></li>
+            <li className="breadcrumb-item active" aria-current="page">Cars Details</li>
           </ol>
         </nav>
         <div className='row'>
@@ -43,30 +43,36 @@ function CarDetails() {
         
         <div className='col-md-6'>
           <SectionHeading subtitle="why choose us" title="We offer the best experience with our rental deals"/>
-          <div className='py-2'>
+          <div className='pb-2'>
             <span className="fs-3">{car.car} / </span>
             <span className='fs-3'>{car.car_model}</span>
           </div>
           
                 
           <div>
-              <img src={airCondition} alt=""/>
+              <img src={airCondition} alt="airCondition"/>
               <small className='text-muted ms-4 fs-5'>Air conditioning</small>
           </div>
           <div>
-              <img src={user} alt=""/>
+              <img src={user} alt="user"/>
               <small className='text-muted ms-4 fs-5'>2 Passanger</small>
           </div>
 
           <div>
-              <img src={frame} alt=""/>
+              <img src={frame} alt="frame"/>
               <small className='text-muted ms-4 fs-5'>auto</small>
           </div>
 
           <div>
-              <img src={doors} alt=""/>
+              <img src={doors} alt="doors"/>
               <small className='text-muted ms-4 fs-5'>4 doors</small>
             </div>
+
+            {/* <hr/> */}
+              <div className='d-flex py-2'>
+                <p className='text-capitalize fs-5'> price: </p>
+                <p className='fs-5 ms-3'>  {car.price} /day</p>
+              </div>
 
         </div>
 

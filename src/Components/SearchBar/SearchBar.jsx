@@ -2,9 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { FaLocationDot } from "react-icons/fa6";
 import SectionHeading from '../SeactionHeading/SectionHeading';
 import axios from 'axios';
-
 import arrowRight from '../../assets/images/card/arrow-right.png';
-
 import Car from '../Car/Car';
 import { Link } from 'react-router-dom';
 
